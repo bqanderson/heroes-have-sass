@@ -1,0 +1,40 @@
+/* Font weights and style -----------------------*/
+$regular: normal;
+$strong: bold;
+$italic: italic;
+
+/* Main Display font classes -----------------------*/
+.heading-1 {
+  @include type-setting(3);
+  font-weight: bold;
+  color: solarized('yellow0');
+}
+
+.heading-2 {
+  @include type-setting(1);
+  font-style: italic;
+  color: solarized('base00');
+  text-decoration: underline;
+}
+
+.general-content {
+  @include type-setting(0);
+  color: solarized('base00');
+}
+
+.small-content {
+  @include type-setting(-1);
+  font-style: italic;
+  color: solarzied('violet0');
+}
+
+/* Links & Nav Text -----------------------------*/
+a {
+  @include transition(color, border, background-color 0.3s ease-in-out);
+  @include type-setting(0);
+  text-decoration: none;
+  color: solarized('yellow0');
+  &:hover {
+    color: solarized('violet0')
+  }
+}

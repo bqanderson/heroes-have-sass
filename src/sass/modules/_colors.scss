@@ -1,0 +1,13 @@
+// Solarized by Ethan Schoonover (www.http://ethanschoonover.com/solarized)
+
+$solarized: (
+  'base00': #657b83,
+  'base1': #93a1a1,
+  'base3': #fdf6e3,
+  'yellow0': #b58900,
+  'violet0': #6c71c4
+);
+
+@function solarized($name) {
+  @return map-get($solarized, $name);
+}
