@@ -1,22 +1,24 @@
 // Solarized by Ethan Schoonover (www.http://ethanschoonover.com/solarized)
 
-$solarized: (
-  'base03': #002b36,
-  'base02': #073642,
-  'base01': #586e75,
-  'base00': #657b83,
-  'base0': #839496,
-  'base1': #93a1a1,
-  'base2': #eee8d5,
-  'base3': #fdf6e3,
-  'yellow0': #b58900,
-  'orange0': #cb4b16,
-  'red0': #dc322f,
-  'violet0': #6c71c4,
-  'blue0': #268bd2,
-  'cyan0': #2aa198,
-);
+// Light color pallette ----------------------
+$lite-base-bg: rgb(253, 246, 227); // base3
+$lite-alt-bg: rgb(238, 232, 213); // base2
+$lite-content: rgb(101, 123, 131); // base00
+$lite-alt-content: rgb(147, 161, 161); // base1
+$lite-accent: rgb(203, 75, 22);  // sinopia
 
-@function solarized($name) {
-  @return map-get($solarized, $name);
-}
+// Dark color pallette -----------------
+$dark-base-bg: rgb(0, 43, 54); // base03
+$dark-alt-bg: rgb(7, 54, 66); // base02
+$dark-content: rgb(88, 110, 117); // base01
+$dark-alt-content: rgb(101, 123, 131); // base00
+$dark-accent: rgb(181, 137, 0);  // dark-goldenrod
+
+// Other colors ---------------------
+$alt-content-01: rgb(131, 148, 150) // base0
+$accent-red: rgb(220, 50, 47) // red0
+$accent-magenta: rgb(211, 54, 130) // magenta0
+$accent-violet: rgb(108, 113, 196) // violet0
+$accent-blue: rgb(38, 139, 210) // blue0
+$accent-cyan: rgb(42, 161, 152) //cyan0
+$accent-green: rgb(133, 153, 0) //green0
