@@ -7,25 +7,22 @@ $italic: italic;
 .heading-1 {
   @include type-setting(3);
   font-weight: bold;
-  color: solarized('yellow0');
+  color: $lite-accent;
 }
 
 .heading-2 {
   @include type-setting(1);
   font-style: italic;
-  color: solarized('base00');
-  text-decoration: underline;
 }
 
 .general-content {
   @include type-setting(0);
-  color: solarized('base00');
 }
 
 .small-content {
   @include type-setting(-1);
   font-style: italic;
-  color: solarzied('violet0');
+  color: $lite-alt-content;
 }
 
 /* Links & Nav Text -----------------------------*/
