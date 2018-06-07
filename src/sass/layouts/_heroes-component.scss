@@ -1,11 +1,53 @@
-.selected {
-  background-color: $lite-content;
-  color: $lite-accent;
-}
-
 .heroes {
-  margin: $base-line-height * 0.5 0 $base-line-height * 0.5 0;
+  margin: $base-line-height 0 $base-line-height 0;
   list-style-type: none;
   padding: 0;
-  width: $base-line-height * 10;
+  width: $base-line-height * 15;
+
+  .selected {
+    border: 1px solid $accent-yellow;
+    color: $accent-yellow;
+  }
+
+  & li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: $lite-alt-bg;
+    margin: $base-line-height * 0.5 auto;
+    padding: 0 $base-line-height * 0.5 0 0;
+    border-radius: 4px;
+
+    // &.selected:hover {
+    //   background-color: $lite-content;
+    //   border: 1px solid $accent-yellow;
+    //   color: $lite-alt-bg;
+    // }
+
+    span.badge {
+      display: inline-block;
+      padding: $base-line-height * 0.5;
+      background-color: $accent-yellow;
+      color: $lite-alt-bg;
+      margin-right: $base-line-height * 0.5;
+      border-radius: 4px 0 0 4px;
+      position: relative;
+    }
+
+    &:hover {
+      border: 1px solid $accent-yellow;
+      color: $accent-yellow;
+      left: .37rem;
+    }
+
+    .text {
+      position: relative;
+      top: -3px;
+    }
+  }
+
+}
+
+.hero-name {
+  color: $accent-yellow;
 }

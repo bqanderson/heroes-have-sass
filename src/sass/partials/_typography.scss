@@ -7,16 +7,18 @@ $italic: italic;
 .heading-1 {
   @include type-setting(3);
   font-weight: bold;
-  color: $lite-accent;
+  color: $accent-yellow;
 }
 
 .heading-2 {
   @include type-setting(1);
   font-style: italic;
+  color: $lite-alt-content;
 }
 
 .general-content {
   @include type-setting(0);
+  color: $lite-content;
 }
 
 .small-content {
