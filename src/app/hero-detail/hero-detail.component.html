@@ -1,0 +1,17 @@
+<div *ngIf="hero">
+  <h2 class="heading-2"><span class="hero-name">{{ hero.name | uppercase }} Details</span></h2>
+  <div class="general-content">
+    <span class="descriptors">ID:</span> {{ hero.id }} |
+    <label><span class="descriptors">Name:</span>
+      <input [(ngModel)]="hero.name" placeholder="name" />
+    </label>
+  </div>
+  <div class="general-content">
+    <span class="descriptors">Class:</span> {{ hero.charClass }} |
+    <span class="descriptors">Level:</span> {{ hero.level }}
+  </div>
+  <div class="general-content">
+    <span class="descriptors">Hit Points:</span> {{ hero.hitpoints }} |
+    <span class="descriptors">Armor Class:</span> {{ hero.armorClass }}
+  </div>
+</div>
