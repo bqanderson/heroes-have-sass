@@ -14,6 +14,7 @@ $italic: italic;
   @include type-setting(1);
   font-style: italic;
   color: $lite-alt-content;
+  text-decoration: underline;
 }
 
 .general-content {
@@ -25,6 +26,21 @@ $italic: italic;
   @include type-setting(-1);
   font-style: italic;
   color: $lite-alt-content;
+}
+
+/* Text Modifying Classes -----------------------*/
+.bold {
+  font-weight: $strong;
+}
+
+.italic {
+  font-style: $italic;
+}
+
+.emphasis {
+  color: $accent-yellow;
+  font-weight: $strong;
+  font-style: $italic;
 }
 
 /* Links & Nav Text -----------------------------*/

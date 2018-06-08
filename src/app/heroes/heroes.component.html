@@ -9,11 +9,19 @@
 </ul>
 
 <div *ngIf="selectedHero">
-  <h2 class="heading-2"><span class="hero-name">{{ selectedHero.name | uppercase }}</span> Details</h2>
-  <div class="general-content"><span>ID: </span>{{ selectedHero.id }}</div>
+  <h2 class="heading-2"><span class="hero-name">{{ selectedHero.name | uppercase }} Details</span></h2>
   <div class="general-content">
-    <label>Name:
+    <span class="descriptors">ID:</span> {{ selectedHero.id }} |
+    <label><span class="descriptors">Name:</span>
       <input [(ngModel)]="selectedHero.name" placeholder="name" />
     </label>
+  </div>
+  <div class="general-content">
+    <span class="descriptors">Class:</span> {{ selectedHero.charClass }} |
+    <span class="descriptors">Level:</span> {{ selectedHero.level }}
+  </div>
+  <div class="general-content">
+    <span class="descriptors">Hit Points:</span> {{ selectedHero.hitpoints }} |
+    <span class="descriptors">Armor Class:</span> {{ selectedHero.armorClass }}
   </div>
 </div>

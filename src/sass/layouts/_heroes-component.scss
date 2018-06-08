@@ -18,13 +18,7 @@
     padding: 0 $base-line-height * 0.5 0 0;
     border-radius: 4px;
 
-    // &.selected:hover {
-    //   background-color: $lite-content;
-    //   border: 1px solid $accent-yellow;
-    //   color: $lite-alt-bg;
-    // }
-
-    span.badge {
+    .badge {
       display: inline-block;
       padding: $base-line-height * 0.5;
       background-color: $accent-yellow;
@@ -50,4 +44,12 @@
 
 .hero-name {
   color: $accent-yellow;
+}
+
+.descriptors {
+  color: $accent-yellow;
+  font-weight: $strong;
+  font-style: $italic;
+  text-decoration: underline;
+  text-decoration-color: $lite-alt-content;
 }
