@@ -16,6 +16,7 @@
     background-color: $lite-alt-bg;
     margin: $base-line-height * 0.5 auto;
     padding: 0 $base-line-height * 0.5 0 0;
+    border: 1px solid $lite-base-bg;
     border-radius: 4px;
 
     .badge {
@@ -24,6 +25,8 @@
       background-color: $accent-yellow;
       color: $lite-alt-bg;
       margin-right: $base-line-height * 0.5;
+      border: 1px solid $accent-yellow;
+      border-right: 0;
       border-radius: 4px 0 0 4px;
       position: relative;
     }
